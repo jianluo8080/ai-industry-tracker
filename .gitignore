@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 数据库和日志
+*.db
+logs/
+
+# 导出数据
+data_exports/
+
+# 临时文件
+_*.py
+_*.js
+*.tmp
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# 虚拟环境
+venv/
+.venv/
+env/
