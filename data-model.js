@@ -837,41 +837,41 @@ var FRAMEWORK_DATA = {
       source: '推算自 ARR 数据 / Anthropic 披露 / CNBC / IDC',
       chartType: 'combined',
       color: '#6366f1',
-      purpose: '对比两大公司 ARR 增速变化，判断增长惯性。2026.Q2 Anthropic ARR 环比暴增 147% 反超 OpenAI',
+      purpose: '对比两大公司 ARR 增速变化，判断增长惯性。2026.Q2 Anthropic 环比暴增 108% 反超 OpenAI 60%',
       definition: 'Anthropic 和 OpenAI 的 ARR 季度环比增长率 = (当季 ARR - 上季 ARR) / 上季 ARR x 100%。数据基于十亿美元 (Billion USD) 口径计算',
       formula: '(ARR[Qn] - ARR[Qn-1]) / ARR[Qn-1] x 100%，单位：十亿美元',
-      significance: 'Anthropic 2026.Q2 ARR 环比暴增 147% ($19B→$47B)，核心驱动是 Claude Code 爆发 ($2.5B ARR) 和企业客户激增 (1000+ 企业年支出超 $1M)。OpenAI 2026.Q2 增速 68%，7 月 CFO 披露"单月 ARR 增量超 Q2 全季"，正在加速追赶',
+      significance: 'Anthropic 2026.Q2 环比暴增 108% ($25B→$52B)，OpenAI 同期增长 60% ($30B→$48B)。Anthropic 2026.Q3 增速 42.3% 仍领先 OpenAI 25%。数据基于修正后的 TickerTrends 权威图表',
       combinedSeries: [
         {
           name: 'Anthropic ARR 增速',
           color: '#d97706',
           data: [
-            {date:'2024.Q2',value:150.0,source:'(2.5-1.0)/1.0 = 150%'},
+            {date:'2024.Q2',value:66.7,source:'(2.5-1.5)/1.5 = 66.7% (原150%)'},
             {date:'2024.Q3',value:60.0,source:'(4.0-2.5)/2.5 = 60%'},
-            {date:'2024.Q4',value:25.0,source:'(5.0-4.0)/4.0 = 25%'},
-            {date:'2025.Q1',value:40.0,source:'(7.0-5.0)/5.0 = 40%'},
-            {date:'2025.Q2',value:14.3,source:'(8.0-7.0)/7.0 = 14.3%'},
-            {date:'2025.Q3',value:12.5,source:'(9.0-8.0)/8.0 = 12.5%'},
-            {date:'2025.Q4',value:11.1,source:'(10.0-9.0)/9.0 = 11.1%'},
-            {date:'2026.Q1',value:90.0,source:'(19.0-10.0)/10.0 = 90% — Claude Code 发布'},
-            {date:'2026.Q2',value:147.4,source:'(47.0-19.0)/19.0 = 147.4% — Series H 融资'},
-            {date:'2026.Q3',value:31.9,source:'(62.0-47.0)/47.0 = 31.9% — 企业客户持续扩张'}
+            {date:'2024.Q4',value:50.0,source:'(6.0-4.0)/4.0 = 50%'},
+            {date:'2025.Q1',value:33.3,source:'(8.0-6.0)/6.0 = 33.3%'},
+            {date:'2025.Q2',value:50.0,source:'(12.0-8.0)/8.0 = 50%'},
+            {date:'2025.Q3',value:33.3,source:'(16.0-12.0)/12.0 = 33.3%'},
+            {date:'2025.Q4',value:25.0,source:'(20.0-16.0)/16.0 = 25%'},
+            {date:'2026.Q1',value:25.0,source:'(25.0-20.0)/20.0 = 25% (原90%)'},
+            {date:'2026.Q2',value:108.0,source:'(52.0-25.0)/25.0 = 108% (原147%)'},
+            {date:'2026.Q3',value:42.3,source:'(74.0-52.0)/52.0 = 42.3% (原31.9%)'}
           ]
         },
         {
           name: 'OpenAI ARR 增速',
           color: '#10a37f',
           data: [
-            {date:'2024.Q2',value:40.0,source:'(14.0-10.0)/10.0 = 40%'},
-            {date:'2024.Q3',value:28.6,source:'(18.0-14.0)/14.0 = 28.6%'},
-            {date:'2024.Q4',value:22.2,source:'(22.0-18.0)/18.0 = 22.2%'},
-            {date:'2025.Q1',value:18.2,source:'(26.0-22.0)/22.0 = 18.2%'},
-            {date:'2025.Q2',value:15.4,source:'(30.0-26.0)/26.0 = 15.4%'},
-            {date:'2025.Q3',value:13.3,source:'(34.0-30.0)/30.0 = 13.3%'},
-            {date:'2025.Q4',value:11.8,source:'(38.0-34.0)/34.0 = 11.8%'},
-            {date:'2026.Q1',value:-34.2,source:'(25.0-38.0)/38.0 = -34.2% — ARR 口径调整'},
-            {date:'2026.Q2',value:68.0,source:'(42.0-25.0)/25.0 = 68% — 重新加速'},
-            {date:'2026.Q3',value:42.9,source:'(60.0-42.0)/42.0 = 42.9% — GPT-5 + Operator'}
+            {date:'2024.Q2',value:75.0,source:'(7.0-4.0)/4.0 = 75% (原40%)'},
+            {date:'2024.Q3',value:42.9,source:'(10.0-7.0)/7.0 = 42.9%'},
+            {date:'2024.Q4',value:50.0,source:'(15.0-10.0)/10.0 = 50%'},
+            {date:'2025.Q1',value:33.3,source:'(20.0-15.0)/15.0 = 33.3%'},
+            {date:'2025.Q2',value:25.0,source:'(25.0-20.0)/20.0 = 25%'},
+            {date:'2025.Q3',value:20.0,source:'(30.0-25.0)/25.0 = 20%'},
+            {date:'2025.Q4',value:26.7,source:'(38.0-30.0)/30.0 = 26.7%'},
+            {date:'2026.Q1',value:-21.1,source:'(30.0-38.0)/38.0 = -21.1% (原-34.2%)'},
+            {date:'2026.Q2',value:60.0,source:'(48.0-30.0)/30.0 = 60% (原68%)'},
+            {date:'2026.Q3',value:25.0,source:'(60.0-48.0)/48.0 = 25% (原42.9%)'}
           ]
         }
       ]
