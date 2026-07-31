@@ -1,5 +1,5 @@
 // Service Worker - PWA 离线缓存
-const CACHE_NAME = 'ai-tracker-v7';
+const CACHE_NAME = 'ai-tracker-v8';
 const ASSETS = [
   './',
   './index.html',
