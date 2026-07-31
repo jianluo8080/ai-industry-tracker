@@ -784,47 +784,47 @@ var FRAMEWORK_DATA = {
       name: 'Anthropic vs OpenAI ARR 对比',
       unit: '十亿美元 (Billion USD)',
       frequency: '季度',
-      source: 'Anthropic Series H 披露 / The Information / IDC / SemiAnalysis / Sacra',
+      source: '用户多源验证 / Anthropic Series H / The Information / Sacra / TickerTrends',
       chartType: 'combined',
       color: '#8b5cf6',
-      purpose: '对比两大 AI 独角兽的 ARR 规模，追踪竞争格局变化。Anthropic 2026 年 Q2 首次超越 OpenAI',
+      purpose: '对比两大 AI 独角兽的 ARR 规模。Anthropic 2026.Q2 ($47B) 首次超越 OpenAI ($45B)，数据经用户多源交叉验证',
       definition: '年化经常性收入 (Annual Recurring Revenue) = 基于当前年化的经常性收入规模。区别于总收入，剔除一次性收入。单位：十亿美元 (B)',
       formula: 'ARR = run-rate revenue annualized (公司披露或 IDC/Sacra 估算)',
-      significance: 'Anthropic 2026.Q2 ARR $47B 首次超越 OpenAI $42B。Anthropic 增长动力来自企业 API (80% 营收)，OpenAI 依赖 C 端订阅 (65%)。IDC 数据：2026Q1 Anthropic 全球 LLM 份额 31.4% vs OpenAI 29%',
+      significance: '关键转折点: 2026.Q1 OpenAI $25B 仍领先 Anthropic $14B；2026.Q2 Anthropic $47B 首次反超 OpenAI $45B；2026.Q3 Anthropic $74B 领先 OpenAI $60B，差距 $14B (若按7月追踪 OpenAI 仅 $41B，差距达 $33B)。数据来源: 用户多源验证 + Anthropic Series H + Sacra + The Information',
       signal: 'Anthropic 已在 ARR 上反超 OpenAI，关注 OpenAI CFO 所言"7 月 ARR 增量超 Q2 全季"的追赶效应',
       combinedSeries: [
         {
           name: 'Anthropic ARR',
           color: '#d97706',
           data: [
-            {date:'2024.Q1',value:1.0,source:'Reuters / Sacra: Anthropic 年化约 $1B'},
-            {date:'2024.Q2',value:2.5,source:'Reuters / Sacra: 环比增长 150%'},
-            {date:'2024.Q3',value:4.0,source:'Reuters / Sacra: 企业 API 快速增长'},
-            {date:'2024.Q4',value:5.0,source:'FourWeekMBA: 年底 ARR 约 $5B'},
-            {date:'2025.Q1',value:7.0,source:'Sacra: 年化突破 $7B'},
-            {date:'2025.Q2',value:8.0,source:'Sacra: 企业客户持续增长'},
-            {date:'2025.Q3',value:9.0,source:'Sacra: Claude 系列产品驱动'},
-            {date:'2025.Q4',value:10.0,source:'FourWeekMBA: 年底 $10B 里程碑'},
-            {date:'2026.Q1',value:19.0,source:'Information Matters (2026.3): Claude Code 爆发'},
-            {date:'2026.Q2',value:47.0,source:'Anthropic Series H 融资披露 (2026.5): $47B ARR'},
-            {date:'2026.Q3',value:62.0,source:'SemiAnalysis 估算 (2026.7): 企业 API 持续扩张'}
+            {date:'2024.Q1',value:0.4,source:'插值: 2024年底 $1B 反推'},
+            {date:'2024.Q2',value:0.7,source:'插值'},
+            {date:'2024.Q3',value:0.9,source:'插值'},
+            {date:'2024.Q4',value:1.0,source:'Sacra/多源: 2024年底约 $1B'},
+            {date:'2025.Q1',value:2.0,source:'插值: 2025年底 $9B 反推'},
+            {date:'2025.Q2',value:4.0,source:'插值'},
+            {date:'2025.Q3',value:6.0,source:'插值'},
+            {date:'2025.Q4',value:9.0,source:'Sacra/多源: 2025年底约 $9B'},
+            {date:'2026.Q1',value:14.0,source:'用户验证: 2026.2月约 $14B (OpenAI 同期 $25B)'},
+            {date:'2026.Q2',value:47.0,source:'Anthropic Series H (2026.5中): 官方确认 $47B'},
+            {date:'2026.Q3',value:74.0,source:'用户验证/多源追踪 (2026.7下旬): $69-74B，取上限'}
           ]
         },
         {
           name: 'OpenAI ARR',
           color: '#10a37f',
           data: [
-            {date:'2024.Q1',value:10.0,source:'推算: Q1 收入约 $1B 年化 = $10B'},
-            {date:'2024.Q2',value:14.0,source:'推算: C 端订阅 + API 增长'},
-            {date:'2024.Q3',value:18.0,source:'推算: GPT-4o 发布驱动'},
-            {date:'2024.Q4',value:22.0,source:'推算: 年底年化 $22B'},
-            {date:'2025.Q1',value:26.0,source:'推算: C 端持续渗透'},
-            {date:'2025.Q2',value:30.0,source:'推算: 企业 API 增长'},
-            {date:'2025.Q3',value:34.0,source:'推算: 多模态产品驱动'},
-            {date:'2025.Q4',value:38.0,source:'推算: 年底年化 $38B'},
-            {date:'2026.Q1',value:25.0,source:'The Information (2026.4): ARR 口径调整，剔除一次性收入'},
-            {date:'2026.Q2',value:42.0,source:'IDC 估算 (2026.6): 重新加速增长'},
-            {date:'2026.Q3',value:60.0,source:'CNBC/内部消息 (2026.7): GPT-5 + Operator 驱动'}
+            {date:'2024.Q1',value:4.0,source:'TickerTrends 图表: $4B'},
+            {date:'2024.Q2',value:7.0,source:'TickerTrends 图表: $7B'},
+            {date:'2024.Q3',value:10.0,source:'TickerTrends 图表: $10B'},
+            {date:'2024.Q4',value:15.0,source:'TickerTrends 图表: $15B'},
+            {date:'2025.Q1',value:20.0,source:'TickerTrends 图表: $20B'},
+            {date:'2025.Q2',value:25.0,source:'TickerTrends 图表: $25B'},
+            {date:'2025.Q3',value:30.0,source:'TickerTrends 图表: $30B'},
+            {date:'2025.Q4',value:38.0,source:'TickerTrends 图表: $38B'},
+            {date:'2026.Q1',value:25.0,source:'The Information (2026.2): 约 $25B (同期 Anthropic $14B)'},
+            {date:'2026.Q2',value:45.0,source:'用户验证/多源: 约 $42-45B'},
+            {date:'2026.Q3',value:60.0,source:'转折点预测: $60B (注: 7月追踪仅 $41B，若按追踪差距更大)'}
           ]
         }
       ]
@@ -837,41 +837,41 @@ var FRAMEWORK_DATA = {
       source: '推算自 ARR 数据 / Anthropic 披露 / CNBC / IDC',
       chartType: 'combined',
       color: '#6366f1',
-      purpose: '对比两大公司 ARR 增速变化，判断增长惯性。2026.Q2 Anthropic 环比暴增 108% 反超 OpenAI 60%',
+      purpose: '对比两大公司 ARR 增速变化。2026.Q2 Anthropic 环比暴增 236% 反超 OpenAI 80%',
       definition: 'Anthropic 和 OpenAI 的 ARR 季度环比增长率 = (当季 ARR - 上季 ARR) / 上季 ARR x 100%。数据基于十亿美元 (Billion USD) 口径计算',
       formula: '(ARR[Qn] - ARR[Qn-1]) / ARR[Qn-1] x 100%，单位：十亿美元',
-      significance: 'Anthropic 2026.Q2 环比暴增 108% ($25B→$52B)，OpenAI 同期增长 60% ($30B→$48B)。Anthropic 2026.Q3 增速 42.3% 仍领先 OpenAI 25%。数据基于修正后的 TickerTrends 权威图表',
+      significance: 'Anthropic 2026.Q2 环比暴增 236% ($14B→$47B)，核心驱动: Series H 融资确认 + Claude Code 爆发。OpenAI 同期增长 80% ($25B→$45B)。Anthropic Q3 增速 57.4% vs OpenAI 33.3%。数据经用户多源交叉验证',
       combinedSeries: [
         {
           name: 'Anthropic ARR 增速',
           color: '#d97706',
           data: [
-            {date:'2024.Q2',value:66.7,source:'(2.5-1.5)/1.5 = 66.7% (原150%)'},
-            {date:'2024.Q3',value:60.0,source:'(4.0-2.5)/2.5 = 60%'},
-            {date:'2024.Q4',value:50.0,source:'(6.0-4.0)/4.0 = 50%'},
-            {date:'2025.Q1',value:33.3,source:'(8.0-6.0)/6.0 = 33.3%'},
-            {date:'2025.Q2',value:50.0,source:'(12.0-8.0)/8.0 = 50%'},
-            {date:'2025.Q3',value:33.3,source:'(16.0-12.0)/12.0 = 33.3%'},
-            {date:'2025.Q4',value:25.0,source:'(20.0-16.0)/16.0 = 25%'},
-            {date:'2026.Q1',value:25.0,source:'(25.0-20.0)/20.0 = 25% (原90%)'},
-            {date:'2026.Q2',value:108.0,source:'(52.0-25.0)/25.0 = 108% (原147%)'},
-            {date:'2026.Q3',value:42.3,source:'(74.0-52.0)/52.0 = 42.3% (原31.9%)'}
+            {date:'2024.Q2',value:75.0,source:'(0.7-0.4)/0.4 = 75%'},
+            {date:'2024.Q3',value:28.6,source:'(0.9-0.7)/0.7 = 28.6%'},
+            {date:'2024.Q4',value:11.1,source:'(1.0-0.9)/0.9 = 11.1%'},
+            {date:'2025.Q1',value:100.0,source:'(2.0-1.0)/1.0 = 100%'},
+            {date:'2025.Q2',value:100.0,source:'(4.0-2.0)/2.0 = 100%'},
+            {date:'2025.Q3',value:50.0,source:'(6.0-4.0)/4.0 = 50%'},
+            {date:'2025.Q4',value:50.0,source:'(9.0-6.0)/6.0 = 50%'},
+            {date:'2026.Q1',value:55.6,source:'(14.0-9.0)/9.0 = 55.6%'},
+            {date:'2026.Q2',value:235.7,source:'(47.0-14.0)/14.0 = 235.7% ← Series H 爆发'},
+            {date:'2026.Q3',value:57.4,source:'(74.0-47.0)/47.0 = 57.4%'}
           ]
         },
         {
           name: 'OpenAI ARR 增速',
           color: '#10a37f',
           data: [
-            {date:'2024.Q2',value:75.0,source:'(7.0-4.0)/4.0 = 75% (原40%)'},
+            {date:'2024.Q2',value:75.0,source:'(7.0-4.0)/4.0 = 75%'},
             {date:'2024.Q3',value:42.9,source:'(10.0-7.0)/7.0 = 42.9%'},
             {date:'2024.Q4',value:50.0,source:'(15.0-10.0)/10.0 = 50%'},
             {date:'2025.Q1',value:33.3,source:'(20.0-15.0)/15.0 = 33.3%'},
             {date:'2025.Q2',value:25.0,source:'(25.0-20.0)/20.0 = 25%'},
             {date:'2025.Q3',value:20.0,source:'(30.0-25.0)/25.0 = 20%'},
             {date:'2025.Q4',value:26.7,source:'(38.0-30.0)/30.0 = 26.7%'},
-            {date:'2026.Q1',value:-21.1,source:'(30.0-38.0)/38.0 = -21.1% (原-34.2%)'},
-            {date:'2026.Q2',value:60.0,source:'(48.0-30.0)/30.0 = 60% (原68%)'},
-            {date:'2026.Q3',value:25.0,source:'(60.0-48.0)/48.0 = 25% (原42.9%)'}
+            {date:'2026.Q1',value:-34.2,source:'(25.0-38.0)/38.0 = -34.2% ← 口径调整'},
+            {date:'2026.Q2',value:80.0,source:'(45.0-25.0)/25.0 = 80% ← 反弹'},
+            {date:'2026.Q3',value:33.3,source:'(60.0-45.0)/45.0 = 33.3%'}
           ]
         }
       ]
